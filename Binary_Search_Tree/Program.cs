@@ -19,6 +19,10 @@ namespace Binary_Search_Tree
             // Displaying the elements of the Binary Search Tree
             binarytree.DisplayBST(binarytree.root);
             Console.WriteLine("\n\nSize of Binary Search Tree: " + binarytree.Size(binarytree.root));
+            //Searching the element 63 in Binary Search Tree
+            Console.WriteLine();
+            Console.WriteLine("Searching for Element 63 in the Binary Search Tree");
+            binarytree.Search(63);
         }
     }
 }
