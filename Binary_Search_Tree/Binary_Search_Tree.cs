@@ -67,6 +67,26 @@ namespace Binary_Search_Tree
             {
                 Console.WriteLine("Right :" + parent.Right.data);
             }
+            if (parent.Left != null)
+            {
+                DisplayBST(parent.Left);
+            }
+            if (parent.Right != null)
+            {
+                DisplayBST(parent.Right);
+            }
+        }
+        public int Size(Node<T> node)
+        {
+            if (node == null)
+            {
+                return 0;
+            }
+            else
+            {
+                // Adding the all the left node, all the right nodes and the root node 
+                return (Size(node.Left) + 1 + Size(node.Right));
+            }
         }
     }
 }
